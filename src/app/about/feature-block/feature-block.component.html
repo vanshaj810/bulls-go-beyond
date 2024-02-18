@@ -1,0 +1,26 @@
+<div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+	<!--Icon-->
+	<div class="icon">
+		<i class="fa fa-{{ feature.icon }} fa-2x"></i>
+	</div>
+	<!--Icon Block Description-->
+	<div *ngIf="feature.title != 'Background'" class="icon-block-description">
+		<h4>{{ feature.title }}</h4>
+		<p>{{ feature.description }}</p>
+	</div>
+
+  <div *ngIf="feature.title == 'Background'" class="icon-block-description">
+    <h4>{{ feature.title }}</h4>
+    <!-- <p>this is the text</p> -->
+
+    <!-- <p>After 3 years of corporate experience in PwC, post qualifying as a data scientist (Masters in Data Science and
+      Machine Learning, BTech), Mr. Harsh Jain</p>
+
+    <p>Developed a profound interest in the field of stock market trading and embarked upon his journey towards becoming a
+      full-time trader and recently got certified with the National Institute of Securities Markets under the SEBI
+      (Certification of Associated Persons in the Securities Market), Regulations, 2007</p> -->
+
+      <p>After 3 years at PwC, Harsh Jain transitioned from data science to full-time stock trading. He's now certified by the National Institute of Securities Markets under SEBI Regulations (2007).</p>
+
+  </div>
+</div>

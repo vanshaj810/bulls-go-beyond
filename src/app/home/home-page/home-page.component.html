@@ -1,0 +1,145 @@
+<div *ngIf="header$ | async as header">
+	<div
+		id="banner"
+		class="scrollto clearfix shift-left"
+		data-enllax-ratio=".5"
+		[style.background]="
+			'url(../assets/images/banner-images/' +
+			header.image +
+			' ) no-repeat center top;'
+		">
+		<div id="banner-content" class="row clearfix pull-right">
+			<div class="col-38">
+				<div class="section-heading">
+					<h1 style="color: white;">{{ header.tagline }}</h1>
+					<h2 style="color: white;">{{ header.title }}</h2>
+				</div>
+
+				<!-- <a style="background-color: gray; color: white;" routerLink="{{ header.buttonlink }}" class="button">{{
+					header.buttontext
+				}}</a> -->
+			</div>
+		</div>
+
+		<div class="rowg" style="color: white;display: block;">
+			<h1 style="color: white;">Customer Reviews</h1>
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="../../../assets/images/user-images/user-1.jpg" class="card-img-top" alt="Review 1 Image">
+					<div class="card-body">
+						<p class="card-text">"Excellent course! Really helped me understand the basics of the stock market. The instructors were knowledgeable and supportive throughout the course."</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="../../../assets/images/user-images/user-2.jpg" class="card-img-top" alt="Review 2 Image">
+					<div class="card-body">
+						<p class="card-text">"Amazing teaching style! Practical sessions were incredibly beneficial. The hands-on experience provided a deep understanding of trading strategies."</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="../../../assets/images/user-images/user-3.jpg" class="card-img-top" alt="Review 3 Image">
+					<div class="card-body">
+						<p class="card-text">"Highly recommend this course to anyone interested in the stock market. The course material was comprehensive, and the instructors were very engaging."</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 text-center"> <!-- Centering the button -->
+				<button type="button" class="btn btn-primary" (click)="loadMoreClicked()">Load More</button>
+			</div>
+		</div>
+		<!-- Load more button -->
+
+		<!-- <div class="container" style="color: white;display: flex;">
+			<div class="rowg">
+				<div class="col-md-12">
+					<h1 style="color: white;">Why Choose Us</h1>
+					<ul class="list-group">
+						<li class="list-group-item">We teach Stock Market concepts from grassroot level</li>
+						<li class="list-group-item">Teaching Practical Application of the concepts is given special importance for the overall development of students</li>
+						<li class="list-group-item">Doubt Clearing support sessions are included</li>
+						<li class="list-group-item">Simplified Study Materials will be provided</li>
+						<li class="list-group-item">Minimum 4 live trading sessions every month</li>
+						<li class="list-group-item">Golden Opportunity for internship with us for the student achievers</li>
+						<li class="list-group-item">Live offline workshops- Come trade with us live</li>
+					</ul>
+				</div>
+			</div>
+		</div> -->
+    <div class="container" style="color: white;">
+      <div class="rowg">
+          <div class="col-md-12">
+              <h1 style="color: white;" class="text-center mb-5">Why Choose Us?</h1>
+          </div>
+      </div>
+      <div class="rowg">
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <h5 class="card-title">We Teach Stock Market Concepts from Grassroot Level</h5>
+                      <p class="card-text">Our curriculum starts from the basics and gradually progresses to advanced topics, ensuring a strong foundation for our students.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <h5 class="card-title">Practical Application of Concepts</h5>
+                      <p class="card-text">We believe in hands-on learning, and therefore, practical application of the concepts is given special importance for the overall development of students.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <h5 class="card-title">Doubt Clearing Support Sessions</h5>
+                      <p class="card-text">We provide regular doubt clearing sessions where students can ask questions and clarify their doubts with our experienced instructors.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="rowg">
+          <div class="col-md-6">
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <h5 class="card-title">Simplified Study Materials</h5>
+                      <p class="card-text">We offer simplified study materials that are easy to understand and follow, making learning a breeze for our students.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <h5 class="card-title">Minimum 4 Live Trading Sessions Every Month</h5>
+                      <p class="card-text">We organize at least 4 live trading sessions every month, providing practical exposure to real-world trading scenarios.</p>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      <div class="rowg">
+          <div class="col-md-6">
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <h5 class="card-title">Live Offline Workshops</h5>
+                      <p class="card-text">Experience live trading firsthand by participating in our live offline workshops where you can trade alongside our experts.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Golden Opportunity for Internship</h5>
+                    <p class="card-text">Outstanding students have the golden opportunity to intern with us, gaining valuable experience and exposure in the field of stock market trading.</p>
+                </div>
+            </div>
+        </div>
+      </div> -->
+  </div>
+
+
+	</div>
+</div>
