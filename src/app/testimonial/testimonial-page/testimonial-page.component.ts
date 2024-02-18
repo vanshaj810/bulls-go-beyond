@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { ConfigService } from '../../shared/services/config.service';
+import { Testimoniale } from '../../shared/services/interfaces';
 import { Feedback } from '../models/feedback.model';
 import { Testimonial } from '../models/testimonial.model';
 
@@ -9,7 +10,7 @@ import { Testimonial } from '../models/testimonial.model';
 	templateUrl: './testimonial-page.component.html',
 })
 export class TestimonialPageComponent implements OnInit {
-	testimonials$: Observable<Testimonial[]> = new Observable();
+	testimonials$: Observable<Testimoniale> = new Observable();
 	feedback$: Observable<Feedback[]> = new Observable();
 
 	constructor(private config: ConfigService) {}

@@ -9,7 +9,7 @@ import { Company } from '../models/company.model';
 	templateUrl: './clients-page.component.html',
 })
 export class ClientsPageComponent implements OnInit {
-	clients$: Observable<Client[]> = new Observable();
+	clients$: Observable<Client> = new Observable();
 	companies$: Observable<Company[]> = new Observable();
 	constructor(private config: ConfigService) {}
 
