@@ -1,6 +1,8 @@
-<section id="pricing" class="secondary-color text-center scrollto clearfix">
+<section id="pricing" class="text-center scrollto clearfix">
 	<div class="rowg clearfix">
-		<div class="section-heading" *ngIf="pricing$ | async as pricing">
+		<div
+			class="section-heading animate-from-left"
+			*ngIf="pricing$ | async as pricing">
 			<h3 class="pull-down">{{ pricing.tagline }}</h3>
 			<h2 class="section-title">{{ pricing.title }}</h2>
 		</div>

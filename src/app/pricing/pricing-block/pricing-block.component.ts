@@ -6,6 +6,7 @@ declare var Razorpay: any;
 @Component({
 	selector: 'app-pricing-block',
 	templateUrl: './pricing-block.component.html',
+  styleUrls: ['./pricing-block.component.scss']
 })
 export class PricingBlockComponent {
 	@Input() plan: Plan;

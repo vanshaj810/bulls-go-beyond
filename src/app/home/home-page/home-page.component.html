@@ -8,11 +8,15 @@
 			header.image +
 			' ) no-repeat center top;'
 		">
-		<div id="banner-content" class="row clearfix pull-right">
-			<div class="col-38">
-				<div class="section-heading">
-					<h1 style="color: white;">{{ header.tagline }}</h1>
-					<h2 style="color: white;">{{ header.title }}</h2>
+		<div id="banner-content" class="row clearfix">
+			<div class="col-md-8 col-sm-12 heading-margin">
+				<div class="section-heading animate-from-bottom">
+					<h1 style="color: #4ceb4f" class="heading-font">
+						{{ header.tagline }}
+					</h1>
+					<h2 class="mt-4" style="color: white; font-size: 2rem">
+						{{ header.title }}
+					</h2>
 				</div>
 
 				<!-- <a style="background-color: gray; color: white;" routerLink="{{ header.buttonlink }}" class="button">{{
@@ -21,34 +25,64 @@
 			</div>
 		</div>
 
-		<div class="rowg" style="color: white;display: block;">
-			<h1 style="color: white;">Customer Reviews</h1>
+		<div
+			[ngClass]="{ 'animate-from-left': animateFromLeft }"
+			class="rowg"
+			style="color: white; display: block"
+			#fadeLeft>
+			<h1 style="color: #4ceb4f" class="heading-font heading-padding">
+				Reviews
+			</h1>
 			<div class="col-md-4">
 				<div class="card mb-4 shadow-sm">
-					<img src="../../../assets/images/user-images/user-1.jpg" class="card-img-top" alt="Review 1 Image">
+					<img
+						src="../../../assets/images/user-images/user-1.jpg"
+						class="card-img-top"
+						alt="Review 1 Image" />
 					<div class="card-body">
-						<p class="card-text">"Excellent course! Really helped me understand the basics of the stock market. The instructors were knowledgeable and supportive throughout the course."</p>
+						<p class="card-text">
+							"Excellent course! Really helped me understand the basics of the
+							stock market. The instructors were knowledgeable and supportive
+							throughout the course."
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="card mb-4 shadow-sm">
-					<img src="../../../assets/images/user-images/user-2.jpg" class="card-img-top" alt="Review 2 Image">
+					<img
+						src="../../../assets/images/user-images/user-2.jpg"
+						class="card-img-top"
+						alt="Review 2 Image" />
 					<div class="card-body">
-						<p class="card-text">"Amazing teaching style! Practical sessions were incredibly beneficial. The hands-on experience provided a deep understanding of trading strategies."</p>
+						<p class="card-text">
+							"Amazing teaching style! Practical sessions were incredibly
+							beneficial. The hands-on experience provided a deep understanding
+							of trading strategies."
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-					<img src="../../../assets/images/user-images/user-3.jpg" class="card-img-top" alt="Review 3 Image">
+				<div class="card mb-4 shadow-sm ">
+					<img
+						src="../../../assets/images/user-images/user-3.jpg"
+						class="card-img-top"
+						alt="Review 3 Image" />
 					<div class="card-body">
-						<p class="card-text">"Highly recommend this course to anyone interested in the stock market. The course material was comprehensive, and the instructors were very engaging."</p>
+						<p class="card-text">
+							"Highly recommend this course to anyone interested in the stock
+							market. The course material was comprehensive, and the instructors
+							were very engaging."
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 text-center"> <!-- Centering the button -->
-				<button type="button" class="btn btn-primary" (click)="loadMoreClicked()">Load More</button>
+			<div class="w-full text-center">
+				<!-- Centering the button -->
+				<button type="button" class="pill-button" (click)="loadMoreClicked()">
+					Load More
+				</button>
 			</div>
 		</div>
 		<!-- Load more button -->
@@ -69,39 +103,59 @@
 				</div>
 			</div>
 		</div> -->
-    <div class="container" style="color: white;">
-      <div class="rowg">
-          <div class="col-md-12">
-              <h1 style="color: white;" class="text-center mb-5">Why Choose Us?</h1>
-          </div>
-      </div>
-      <div class="rowg">
-          <div class="col-md-4">
-              <div class="card mb-4">
-                  <div class="card-body">
-                      <h5 class="card-title">We Teach Stock Market Concepts from Grassroot Level</h5>
-                      <p class="card-text">Our curriculum starts from the basics and gradually progresses to advanced topics, ensuring a strong foundation for our students.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card mb-4">
-                  <div class="card-body">
-                      <h5 class="card-title">Practical Application of Concepts</h5>
-                      <p class="card-text">We believe in hands-on learning, and therefore, practical application of the concepts is given special importance for the overall development of students.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card mb-4">
-                  <div class="card-body">
-                      <h5 class="card-title">Doubt Clearing Support Sessions</h5>
-                      <p class="card-text">We provide regular doubt clearing sessions where students can ask questions and clarify their doubts with our experienced instructors.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- <div class="rowg">
+		<div
+			[ngClass]="{ 'animate-bottomTop': animateFromBottom }"
+			class="container"
+			#whyChoose
+			style="color: white">
+			<div class="=">
+				<div class="col-md-12">
+					<h1 style="color: #4ceb4f" class="text-center heading-font mb-5">
+						Why Choose Us?
+					</h1>
+				</div>
+			</div>
+			<div class="rowg">
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<div class="card-body">
+							<h5 class="card-title">
+								We Teach Stock Market Concepts from Grassroot Level
+							</h5>
+							<p class="card-text">
+								Our curriculum starts from the basics and gradually progresses
+								to advanced topics, ensuring a strong foundation for our
+								students.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<div class="card-body">
+							<h5 class="card-title">Practical Application of Concepts</h5>
+							<p class="card-text">
+								We believe in hands-on learning, and therefore, practical
+								application of the concepts is given special importance for the
+								overall development of students.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<div class="card-body">
+							<h5 class="card-title">Doubt Clearing Support Sessions</h5>
+							<p class="card-text">
+								We provide regular doubt clearing sessions where students can
+								ask questions and clarify their doubts with our experienced
+								instructors.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="rowg">
           <div class="col-md-6">
               <div class="card mb-4">
                   <div class="card-body">
@@ -138,8 +192,6 @@
             </div>
         </div>
       </div> -->
-  </div>
-
-
+		</div>
 	</div>
 </div>

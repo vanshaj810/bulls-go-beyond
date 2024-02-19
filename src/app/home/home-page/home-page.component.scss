@@ -1,1 +1,71 @@
 
+@for $i from 1 through 16 {
+    .m-#{$i} {
+      margin: $i * 1rem;
+    }
+   .ml-#{$i}{
+    margin-left: $i * 1rem;
+   }
+   .mr-#{$i}{
+    margin-right: $i * 1rem;
+   }
+   .mt-#{$i}{
+    margin-top: $i * 1rem;
+   }
+   .mr-#{$i}{
+    margin-bottom: $i * 1rem;
+   }
+   .mx-#{$i}{
+    margin-right: $i * 1rem;
+    margin-left: $i * 1rem;
+   }
+   .my-#{$i}{
+    margin-top: $i * 1rem;
+    margin-bottom: $i * 1rem;
+   }
+}
+
+@media screen and (min-width: 350px) and (max-width: 750px) {
+    .heading-margin{
+        margin:1rem 
+    }
+    .heading-font{
+        font-size: 3rem !important
+    }
+    .heading-padding{
+        padding-left: 1rem
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+     .heading-margin{
+        margin-left: 4rem;
+    }
+    .heading-font{
+        font-size: 4rem !important
+    }
+    .heading-padding{
+        padding-left: 4rem
+    }
+}
+@media screen and (min-width: 1024px) {
+    .heading-margin{
+        margin-left: 8rem;
+    }
+    .heading-font{
+        font-size: 4rem !important
+    }
+    .heading-padding{
+        padding-left: 4rem
+    }
+}
+
+.card:hover{
+    img{
+        opacity: 0.7;
+    }
+}
+
+.card-body{
+    background-color: #121212;
+    color: white;
+}
