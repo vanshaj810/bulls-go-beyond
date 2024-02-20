@@ -116,7 +116,7 @@ figure {
 .page-border .left-border,
 .page-border .right-border,
 .page-border .top-border {
-  background: #f3f3ef;
+  background: #f3f3ef00;
   position: fixed;
   z-index: 9999;
 }
@@ -126,7 +126,7 @@ figure {
 .page-border > .bottom-border,
 .page-border > .left-border {
   padding: 11px;
-  background: #ccc;
+  background: #cccccc00;
 }
 
 .page-border .bottom-border,
@@ -912,7 +912,7 @@ blockquote {
   }
   100%{
     transform: scale(1.3);
-    
+
   }
 }
 
@@ -1196,7 +1196,7 @@ blockquote {
   color: #b4b4b4;
   line-height: auto;
   margin: 0;
-} 
+}
 
 /*------------------------------------------------------------------------------------------*/
 /* 7. Footer */
@@ -2311,7 +2311,7 @@ h4 {
 }
 
 /* Button Hover Color */
-/* 
+/*
 #banner .button:hover {
   color: #d2b356;
   border-color: #d2b356;
@@ -2408,7 +2408,7 @@ h4 {
   .title-top-margin{
     margin-top: 90px ;
   }
-  
+
 }
 .title-top-margin{
   margin-top: 90px ;
