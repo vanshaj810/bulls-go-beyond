@@ -1,11 +1,14 @@
-<ul [class.expanded]="menuOpen === true">
-	<li *ngFor="let menuItem of menu">
-		<a
-			routerLink="{{ menuItem.link }}"
-			(click)="toggleMenu()"
-			routerLinkActive="active"
-			[routerLinkActiveOptions]="{ exact: true }"
-			>{{ menuItem.title }}</a
-		>
-	</li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [class.show]="navbarOpen" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li *ngFor="let menuItem of menu" class="nav-item">
+              <a class="nav-link" [routerLink]="menuItem.link" (click)="toggleMenu()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ menuItem.title }}</a>
+          </li>
+      </ul>
+  </div>
+</nav>
