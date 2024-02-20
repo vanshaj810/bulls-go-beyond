@@ -12,13 +12,13 @@
 	</button>
 
 	<div
-		class="collapse navbar-collapse"
+		class="collapse navbar-collapse justify-content-center"
 		[class.show]="navbarOpen"
 		id="navbarSupportedContent">
 		<ul class="navbar-nav ml-3 mr-auto">
-			<li *ngFor="let menuItem of menu" class="nav-item my-3">
+			<li *ngFor="let menuItem of menu" class="nav-item my-3 text-center">
 				<a
-					class="custom_nav_link"
+					class="custom_nav_link text-center"
 					[routerLink]="menuItem.link"
 					(click)="toggleMenu()"
 					routerLinkActive="active"
